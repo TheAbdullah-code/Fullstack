@@ -1,11 +1,12 @@
 import React, {useEffect, useState} from 'react'
+import Register from './Register'
 
 export default function App() {
  
   const [backend, setBackend ] = useState({});
 
   useEffect(() => {
-    fetch("http://localhost:5000/api").then(
+    fetch("https://fullstackserver-3.onrender.com/api").then(
       response => response.json()
     ). then (
       data => {
@@ -16,14 +17,7 @@ export default function App() {
 
   return (
     <div>
-      {(backend.users === undefined)?(
-       <p>Loading</p>
-       ):(
-       backend.users.map((user, i) =>(
-         <p key={i}>{user}</p>
-        ))
-    // The Frontend
-      )}
+<Register />
     </div>
   )
 }
