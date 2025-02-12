@@ -33,7 +33,7 @@ function Register(){
     };
     return(
         <div>
-            <h1>Register</h1>
+            <h1>Eventa.com</h1>
             <form onSubmit={handleSubmit} className="p-4 max-w-sm mx-auto space-y-4 border rounded-lg shadow">
       <h2 className="text-xl font-bold">Register</h2>
       <input
